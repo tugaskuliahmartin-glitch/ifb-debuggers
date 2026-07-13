@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+/* ===========================
+   FONT
+=========================== */
+
+:root {
+  font-family: "Plus Jakarta Sans", sans-serif;
+
+  color-scheme: light;
+}
+
+/* ===========================
+   LIGHT MODE
+=========================== */
+
+:root {
+
+  --background: #ffffff;
+
+  --foreground: #0f172a;
+
+  --primary: #2563eb;
+
+  --primary-hover: #1d4ed8;
+
+  --secondary: #eff6ff;
+
+  --card: rgba(255,255,255,.65);
+
+  --border: rgba(255,255,255,.5);
+
+  --muted: #64748b;
+
+  --success: #22c55e;
+
+  --warning: #f59e0b;
+
+  --danger: #ef4444;
+
+  --shadow:
+      0 8px 30px rgba(15,23,42,.08);
+
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark{
+
+  --background:#020617;
+
+  --foreground:#ffffff;
+
+  --primary:#3b82f6;
+
+  --primary-hover:#60a5fa;
+
+  --secondary:#0f172a;
+
+  --card:rgba(15,23,42,.65);
+
+  --border:rgba(255,255,255,.08);
+
+  --muted:#94a3b8;
+
+  --success:#22c55e;
+
+  --warning:#f59e0b;
+
+  --danger:#ef4444;
+
+  --shadow:
+      0 10px 35px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:
+
+linear-gradient(
+180deg,
+#ffffff 0%,
+#f8fbff 35%,
+#eef6ff 70%,
+#e6f1ff 100%
+);
+
+color:var(--foreground);
+
+min-height:100vh;
+
+transition:.35s;
+
+}
+
+.dark body{
+
+background:
+
+linear-gradient(
+180deg,
+#020617,
+#07142d,
+#0f172a
+);
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container-custom{
+
+max-width:1280px;
+
+margin:auto;
+
+padding-left:24px;
+
+padding-right:24px;
+
+}
+
+/* ===========================
+   GLASS EFFECT
+=========================== */
+
+.glass{
+
+background:var(--card);
+
+backdrop-filter:blur(20px);
+
+border:1px solid var(--border);
+
+box-shadow:var(--shadow);
+
+}
+
+/* ===========================
+   TRANSITION
+=========================== */
+
+button,
+a,
+input{
+
+transition:.25s;
+
+}
